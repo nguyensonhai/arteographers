@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arteographers
+  </title>
+  <link rel="shortcut icon" type="image/png" href="src/assets/icons/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="src/css/atg-style.css">
+  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather'>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script type="text/javascript">
+    var myimage = new Array();
+    myimage[0] = "src/assets/images/group1.jpg";
+    myimage[1] = "src/assets/images/group2.jpg";
+    myimage[2] = "src/assets/images/group3.jpg";
+    myimage[3] = "src/assets/images/group4.jpg";
+    myimage[4] = "src/assets/images/group5.jpg";
+    myimage[5] = "src/assets/images/group6.jpg";
+    function ShowImage(num) {
+      document.picbox1.src = myimage[num];
+    }
+    function SelectImage() {
+      index = document.myform.imgselect.selectedIndex;
+      ShowImage(index);
+    }
+  </script>
+</head>
+
+<body onload="Onload()">
+  <!-- Navivation Bar -->
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Arteographers</label>
+    <ul>
+      <li><a href="https://www.facebook.com/groups/198934353625233">Facebook</a></li>
+      <li><a href="https://www.youtube.com/channel/UCHplBojsuOrPi0VdQJ6cE7g">Youtube</a></li>
+    </ul>
+  </nav>
+  <!-- Navivation Bar -->
+  <!--  -->
+  <!-- Flex Col -->
+  <div class="flex-col">
+    <img src="src/assets/images/ATG_logo.png" alt="ATG Logo" width="400" height="400" usemap="#apulogo">
+    <div class="flex-text">
+      <h1 class="center"> Welcome to ATG </h1> <br>
+      <h2 class="center"> Who are we?</h2>
+      <p class="center"> We are a group of dancers coming from different countries, gathered together to create a
+        playground for people who are deeply interested in dancing hiphop. We combine art and choreos together and
+        hence, the name Arteographer. </p>
+    </div>
+  </div>
+  <!-- Flex Col -->
+  <!--  -->
+  <!-- Flex Row -->
+  <div class="flex-row">
+    <a href="https://www.facebook.com/baole161" target="_blank">
+      <img src="src/assets/images/Bao-Le.jpg" alt="ATG Logo" width="300" height="300" usemap="#apulogo"
+        class="avatar-image" href="https://www.facebook.com/baole161" target="_blank">
+    </a>
+    <div class="info-container">
+      <p class="flex-text large1">Here are our founder and current leader of the team.<br>This is <b>Bao Le</b>,
+        our kind
+        founder of this circle since 2013, he has been dancing
+        for most of his life and
+        he has a lot of experience in dancing as well as inspiring others to put effort into this sport.
+      </p>
+    </div>
+  </div>
+  <!-- Flex Row -->
+  <!--  -->
+  <!-- Flex Row -->
+  <div class="flex-row">
+    <a href="https://www.facebook.com/BaoLedanceclass" target="_blank">
+      <img src="src/assets/images/dancing dude.jpg" alt="ATG Logo" width="300" height="300" usemap="#apulogo"
+        class="avatar-image">
+    </a>
+    <div class="info-container">
+      <p class="flex-text large1">Bao currently is also having his own online class for dancing both for beginners and
+        advance dancers due to the pandemic. If you are interested and in some circumstances can not
+        attend our regular weekly open practices. Please follow this link to acquire further info of his classes and
+        how
+        to register.</>
+    </div>
+  </div>
+  <!-- Flex Row -->
+  <!--  -->
+  <!-- Flex Row -->
+  <div class="flex-row">
+    <a href="https://www.facebook.com/gimmefoodandlove" target="_blank">
+      <img src="src/assets/images/Minh-Kobe.jpg" alt="ATG Logo" width="300" height="300" usemap="#apulogo"
+        class="avatar-image">
+    </a>
+    <div class="info-container">
+      <p class="flex-text large1">This is <b>Minh Kobe</b>, our current leader, he may not look like one but he sure put
+        a
+        lot of effort into dancing
+        and improved so much since the day he started joining us. He will help you guys carry on Bao Le's fire in
+        this
+        art.
+      </p>
+    </div>
+  </div>
+  <!-- Flex Row -->
+  <!--  -->
+  <!-- Flex Row -->
+  <div class="flex-row">
+    <div class="info-container">
+      <p class="flex-text large1">And with our most precious members that has been with us through many practices and
+        performances since the beginning until now:
+      </p>
+    </div>
+  </div>
+  <!-- Flex Row -->
+  <!--  -->
+  <!-- Flex Col -->
+  <div class="flex-col">
+    <!-- Slider -->
+    <img src="src/assets/images/group1.jpg" name="picbox1" class="slider-image">
+    <br>
+    <center>
+      <form name="myform" id="slider-form">
+        <input type="button" value="Picture 1" onClick="ShowImage(0)">
+        <input type="button" value="Picture 2" onClick="ShowImage(1)">
+        <input type="button" value="Picture 3" onClick="ShowImage(2)">
+        <input type="button" value="Picture 4" onClick="ShowImage(3)">
+        <input type="button" value="Picture 5" onClick="ShowImage(4)">
+        <input type="button" value="Picture 6" onClick="ShowImage(5)">
+        <br><br>
+        <input type="radio" name="imgradio" onClick="ShowImage(0)"> Picture 01
+        <input type="radio" name="imgradio" onClick="ShowImage(1)"> Picture 02
+        <input type="radio" name="imgradio" onClick="ShowImage(2)"> Picture 03
+        <input type="radio" name="imgradio" onClick="ShowImage(3)"> Picture 04
+        <br>
+        <input type="radio" name="imgradio" onClick="ShowImage(0)"> Picture 05
+        <input type="radio" name="imgradio" onClick="ShowImage(1)"> Picture 06
+        <br>
+        <br>
+        <select name="imgselect">
+          <option>Picture 01
+          <option>Picture 02
+          <option>Picture 03
+          <option>Picture 04
+          <option>Picture 05
+          <option>Picture 06
+        </select>
+        <input type="button" value="Change" onClick="SelectImage()">
+        <br><br>
+        <form name="myform" id="slider-form">
+          <input type="button" value="Prev" onClick="ShowNextImage()">
+          <input type="button" value="Next" onClick="ShowPreviousImage()">
+        </form>
+    </center>
+    <!-- Slider -->
+    <!--  -->
+  </div>
+  <!-- Flex Col -->
+
+  <!-- Flex Row -->
+  <div class="flex-row">
+    <div class="info-container">
+      <p class="flex-text large1">Here is a sneak peak of what our open practices look like:
+      </p><br>
+      <div>
+        <video class="img-center" width="100%" height="auto" controls>
+          <source src="src/assets/videos/Open practice.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+  <!-- Flex Row -->
+  <!--  -->
+  <!-- Chart -->
+  <div class="flex-col">
+    <p class="flex-text large1 center">Most favorite genre:
+    </p>
+    <div id="chart_div" class="pie-chart" style="width: 100%; height: 800px;"></div>
+  </div>
+  <!-- Chart -->
+  <!--  -->
+  <!-- Flex Row -->
+  <div class=" flex-row">
+    <div class="info-container">
+      <p class="flex-text large1">What <b>you</b> will get: <br>
+        - A small family that share the same passion for dancing <br>
+        - A friendly environment to make new friends <br>
+        - Something to look forward to after a boring day full of lectures <br>
+        - Occasional small gatherings to strengthen our bonds <br><br>
+      </p>
+    </div>
+  </div>
+  <!-- Flex Row -->
+  <!--  -->
+  <!-- Flex Row -->
+  <div class="flex-row">
+    <audio controls autoplay id="playAudio">
+      <source src="src/assets/images/ATG_logo.png" type="audio/ogg">
+      <source src="src/assets/audios/audioATG.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  <!-- Flex Row -->
+  <!--  -->
+  <!-- Script  -->
+  <!-- Chart -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="src/js/chart.js"> </script>
+  <script src="src/js/slider.js"> </script>
+  <!-- Chart -->
+  <!--  -->
+  <script src="src/js/play-audio.js"> </script>
+  <script src="src/slider.js"> </script>
+  <!-- Script -->
+  <!--  -->
+</body>
+
+</html>
