@@ -46,7 +46,7 @@ function drawChart() {
   };
 
   var chart = new google.visualization.BubbleChart(
-    document.getElementById("chart_div")
+    document.getElementById("chart")
   );
   chart.draw(data, options);
 }
