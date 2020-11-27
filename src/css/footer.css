@@ -133,6 +133,9 @@
 .social-icons a.dribbble:hover {
   background-color: #ea4c89;
 }
+.social-icons a.instagram:hover {
+  background-color: #d82a78;
+}
 @media (max-width: 767px) {
   .social-icons li.title {
     display: block;
