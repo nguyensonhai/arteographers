@@ -50,7 +50,7 @@ input[type="reset"]:hover {
 }
 .form textarea {
   text-align: left;
-  background-color: pink;
+  color: black;
 }
 a {
   font-size: 150%;

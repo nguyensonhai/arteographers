@@ -99,7 +99,7 @@ a:hover {
   a:hover,
   a.active {
     background: none;
-    color: #0082e6;
+    color: white;
   }
   #check:checked ~ ul {
     left: 0;
@@ -114,7 +114,7 @@ body {
 }
 .flex-row {
   margin-top: 20px;
-  width: 70%;
+  width: 60%;
   height: 100%;
   align-self: center;
   display: flex;
@@ -125,16 +125,21 @@ body {
   margin: 100px auto;
 }
 .flex-col {
-  width: 80%;
+  width: 100%;
   height: 100%;
   align-self: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 10px auto;
 }
+.flex-text-col {
+  width: 75%;
+}
 .flex-text {
-  width: 90%;
+  width: 100%;
 }
 .avatar-image {
   border-radius: 10px;
